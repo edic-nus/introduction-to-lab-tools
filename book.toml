@@ -1,0 +1,6 @@
+[book]
+authors = ["Jasshan Kumeresh"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Introduction to electronic lab tools"
