@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Overview - Introduction to electronic lab tools</title>
+        <title>Triggering - Introduction to electronic lab tools</title>
 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html" class="active"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="multimeter.html"><strong aria-hidden="true">2.</strong> Multimeter</a></li><li class="chapter-item expanded "><a href="dc_power_supply.html"><strong aria-hidden="true">3.</strong> Power supply</a></li><li class="chapter-item expanded "><a href="oscilloscope.html"><strong aria-hidden="true">4.</strong> Oscilloscope</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="scope_triggering.html"><strong aria-hidden="true">4.1.</strong> Triggering</a></li></ol></li><li class="chapter-item expanded "><a href="logic-analyser.html"><strong aria-hidden="true">5.</strong> Logic analyser</a></li><li class="chapter-item expanded "><a href="activities.html"><strong aria-hidden="true">6.</strong> Activities</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="activity-I-potential-divider.html"><strong aria-hidden="true">6.1.</strong> Activity I</a></li><li class="chapter-item expanded "><a href="activity-II-capacitor.html"><strong aria-hidden="true">6.2.</strong> Activity II</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="multimeter.html"><strong aria-hidden="true">2.</strong> Multimeter</a></li><li class="chapter-item expanded "><a href="dc_power_supply.html"><strong aria-hidden="true">3.</strong> Power supply</a></li><li class="chapter-item expanded "><a href="oscilloscope.html"><strong aria-hidden="true">4.</strong> Oscilloscope</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="scope_triggering.html" class="active"><strong aria-hidden="true">4.1.</strong> Triggering</a></li></ol></li><li class="chapter-item expanded "><a href="logic-analyser.html"><strong aria-hidden="true">5.</strong> Logic analyser</a></li><li class="chapter-item expanded "><a href="activities.html"><strong aria-hidden="true">6.</strong> Activities</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="activity-I-potential-divider.html"><strong aria-hidden="true">6.1.</strong> Activity I</a></li><li class="chapter-item expanded "><a href="activity-II-capacitor.html"><strong aria-hidden="true">6.2.</strong> Activity II</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -144,17 +144,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>This course is an introduction to basic electronic test equipment commonly used in building and debugging circuits. In addition, the reader will also become familiar with the usage of breadboards, a common circuit prototyping material. </p>
-<p>The test equipment covered will include multimeters, DC power supplies and oscilloscopes, with a short section on logic analysers. </p>
-<p>Although this course material can be consumed without having the above equipment, it is still <strong>recommended</strong> to have a set on-hand for the full experience. The best way to learn how to use electronic equipment is to keep using them! (press all the buttons)</p>
-<p>If you have any feedback on the content presented here or find any mistakes, please reach out to jasshank@u.nus.edu!</p>
+                        <h1 id="what-is-triggering"><a class="header" href="#what-is-triggering">What is triggering?</a></h1>
+<p>Triggering helps to synchronise the incoming signal with the display of the scope. When the scope is not triggered (synchronised). </p>
+<p>A good way to see for your self what an unsynchronised scope looks like is to attach your probe to the square wave signal generator of your scope (usually at the bottom right hand corner), and rotate the trigger knob so its completely above or below the signal. You will immediately notice that the waveform displayed is no longer a smooth square wave as it starts jumping across your screen. If you don't have a scope on hand, this <a href="https://www.youtube.com/watch?v=j2vch6wAddc">video</a> by Keysight provides a great visualisation of it.</p>
+<p><img src="./img/picture.png" alt="scope_square_wave_gen_image" /></p>
+<h1 id="trigger-modes"><a class="header" href="#trigger-modes">Trigger modes</a></h1>
+<p>By default, your oscilloscope will be on 'auto' trigger mode and will continuously show you whatever is being fed into it. However, there are situations were you want to capture a particular moment with your signal and not the entire thing, such a spike above a certain voltage or the transition from 0 V to 5 V. This is where trigger modes come in. </p>
+<p>Different scopes offer different types of trigger modes, but common ones are triggering during a low to high transition or when a certain gradient is observed in the signal. As usual, your scopes manual will detail all the trigger modes available to you. This is the <a href="https://www.manualslib.com/manual/2678098/Siglent-Sds1022dl.html?page=49#manual">manual</a> for the scope found in the NUS E2A Electronic Lab, on the section 'Trigger Types'.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="oscilloscope.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-                            <a rel="next" href="multimeter.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="logic-analyser.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -164,8 +170,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="oscilloscope.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
-                    <a rel="next" href="multimeter.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="logic-analyser.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

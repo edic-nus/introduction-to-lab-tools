@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="multimeter.html"><strong aria-hidden="true">2.</strong> Multimeter</a></li><li class="chapter-item expanded "><a href="dc_power_supply.html"><strong aria-hidden="true">3.</strong> Power supply</a></li><li class="chapter-item expanded "><a href="oscilloscope.html" class="active"><strong aria-hidden="true">4.</strong> Oscilloscope</a></li><li class="chapter-item expanded "><a href="logic-analyser.html"><strong aria-hidden="true">5.</strong> Logic analyser</a></li><li class="chapter-item expanded "><a href="activities.html"><strong aria-hidden="true">6.</strong> Activities</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="activity-I-potential-divider.html"><strong aria-hidden="true">6.1.</strong> Activity I</a></li><li class="chapter-item expanded "><a href="activity-II-capacitor.html"><strong aria-hidden="true">6.2.</strong> Activity II</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="multimeter.html"><strong aria-hidden="true">2.</strong> Multimeter</a></li><li class="chapter-item expanded "><a href="dc_power_supply.html"><strong aria-hidden="true">3.</strong> Power supply</a></li><li class="chapter-item expanded "><a href="oscilloscope.html" class="active"><strong aria-hidden="true">4.</strong> Oscilloscope</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="scope_triggering.html"><strong aria-hidden="true">4.1.</strong> Triggering</a></li></ol></li><li class="chapter-item expanded "><a href="logic-analyser.html"><strong aria-hidden="true">5.</strong> Logic analyser</a></li><li class="chapter-item expanded "><a href="activities.html"><strong aria-hidden="true">6.</strong> Activities</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="activity-I-potential-divider.html"><strong aria-hidden="true">6.1.</strong> Activity I</a></li><li class="chapter-item expanded "><a href="activity-II-capacitor.html"><strong aria-hidden="true">6.2.</strong> Activity II</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -150,23 +150,24 @@
 <p>The resolution (the size of the time step) of an oscilloscope varies and is dependent on the scope being used. Always refer to the manual and specification sheet of your scope to learn its limitations. </p>
 <h1 id="display"><a class="header" href="#display">Display</a></h1>
 <p>The oscilloscopes display has voltage on the vertical axis and time on the horizontal axis. </p>
-<p>The display itself is broken up into a grid. Each square on the grid has two divisions, the vertical and horizontal division. The vertical and horizontal divisions are sometimes referred to as voltage and time divisions respectively, due to the axis positions. The exact units of these divisions are generally displayed at the top or bottom of the scopes display. </p>
+<p>The display itself is broken up into a grid. Each square on the grid has two divisions, the vertical and horizontal division. The vertical and horizontal divisions are sometimes referred to as voltage and time divisions respectively, due to the axis positions. The exact units of these divisions are generally displayed at the top or bottom of the scopes display. (hint: when first using your scope, turn the knobs to see what changes!)</p>
+<p><img src="./img/picture.png" alt="scope_display_image" /></p>
 <h1 id="channels"><a class="header" href="#channels">Channels</a></h1>
 <p>Oscilloscopes can have multiple channels for taking measurements. A 3 channel scope will be able to measure 3 different signals at same time, overlaying them on top of each other on the display. </p>
 <p>Individual channels can be toggled on and off, depending on what the user is observe from the DUT. Care should be taken to make sure the channel being display corresponds to the channel being used for measurement. </p>
+<p><img src="./img/picture.png" alt="scope_channel_image" /></p>
 <h1 id="probes"><a class="header" href="#probes">Probes</a></h1>
 <p>Probes are connected to the channel ports of an oscilloscope. Each probe has a ground clip as well a hook for taking measurements. </p>
 <p>When taking measurements across very metal contacts, the hook attachment can be removed, revealing a fine metal tip for taking measurements on small traces! Additionally, the ground clip can be switch out for a fix distance tip too.</p>
 <p>Below is an image of a probe which has had the hook removed and the fixed ground tip attached. 
-<img src="./resources/fine_tip_probe.png" alt="fine_tip_probe" />
+<img src="./img/fine_tip_probe.png" alt="fine_tip_probe" />
 <a href="https://electronics.stackexchange.com/questions/411399/how-the-low-inductance-of-short-ground-clip-probes-prevents-interference">Image credit</a></p>
 <p>Finally, some probes come included with a slider marked with 1x and 10x on either end. 1x and 10x refers to the input impedance (resistance) of the scope, with the 10x mode increasing the input impedance of the probe by 10 times. This will result in a cleaner measurement, but with the downside that the measured voltage will be 10 times smaller than what it actually is. Because of this, small signals might become too small to be measured by the scope.  The choice of mode should be dependent on the DUT and is up to the user. </p>
 <h1 id="all-the-buttons"><a class="header" href="#all-the-buttons">All the buttons</a></h1>
 <p>Scopes have...a lot of buttons. The two basic knobs are the horizontal and vertical positioning knobs. These knobs allow you to move your measured signal left, right, up and down. </p>
-<p>The trigger (sometimes called auto-scale) button is to automatically sync up your scope with the incoming signal, 'calibrating' it. </p>
-<p>The rest of the buttons on the scope are dependent on the specific model, but they allow you to interface with the different measurement modes of the scope, such as frequency, pulse width modulation, peak-to-peak, maximum, minimum, mean and so on. </p>
-<h1 id="triggering"><a class="header" href="#triggering">Triggering</a></h1>
-<h1 id="measurement"><a class="header" href="#measurement">Measurement</a></h1>
+<p>The trigger (sometimes called auto-scale or just auto) button is to automatically sync up your scope with the incoming signal, 'calibrating' it. Either than auto-triggering, you can configure your scope to trigger at specific types of signals. Find out more <a href="./scope_triggering.html">here</a>. </p>
+<p>The rest of the buttons on the scope are dependent on the specific model, but they allow you to interface with the different measurement modes of the scope, such as frequency, pulse width modulation, peak-to-peak, maximum, minimum, mean and so on. Nearly every scope comes with a 'manual measurement' mode, in the form of cursors. Cursors are lines which you can move across your scopes display to help you calculate changes between two points, either in the voltage or time scale. </p>
+<p>The best way to figure out what the buttons on your scope is to click them and see what happens, so don't be afraid to do so. (reading the manual for your scope also helps)</p>
 
                     </main>
 
@@ -176,7 +177,7 @@
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="logic-analyser.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="scope_triggering.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -190,7 +191,7 @@
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="logic-analyser.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="scope_triggering.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -230,6 +231,8 @@
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="mermaid.min.js"></script>
+        <script src="mermaid-init.js"></script>
 
 
     </div>

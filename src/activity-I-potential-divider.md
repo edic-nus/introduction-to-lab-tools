@@ -2,7 +2,7 @@
 Find the voltage across the resistors, individually and together. 
 
 # Circuit
-![circuit_potential_divider](./resources/circuit_potential_divider.png)
+![circuit_potential_divider](./img/circuit_potential_divider.png)
 
 # Points to think about 
 1. How are the holes on the breadboard connected? How would you go about finding this out with only a wire and a multimeter?

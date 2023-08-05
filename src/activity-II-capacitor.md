@@ -2,7 +2,7 @@
 Observe the charging curve of a capacitor.
 
 # Circuit
-![circuit_capacitor](./resources/circuit_capacitor.png)
+![circuit_capacitor](./img/circuit_capacitor.png)
 
 # Points to think about
 1. How long did it take for the capacitor to charge? 

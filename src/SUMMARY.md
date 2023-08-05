@@ -4,6 +4,7 @@
 - [Multimeter](./multimeter.md)
 - [Power supply](./dc_power_supply.md)
 - [Oscilloscope](./oscilloscope.md)
+    - [Triggering](./scope_triggering.md)
 - [Logic analyser](./logic-analyser.md)
 - [Activities](./activities.md)
     - [Activity I](./activity-I-potential-divider.md)
