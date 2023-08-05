@@ -149,6 +149,15 @@
 <p>The test equipment covered will include multimeters, DC power supplies and oscilloscopes, with a short section on logic analysers. </p>
 <p>Although this course material can be consumed without having the above equipment, it is still <strong>recommended</strong> to have a set on-hand for the full experience. The best way to learn how to use electronic equipment is to keep using them! (press all the buttons)</p>
 <p>If you have any feedback on the content presented here or find any mistakes, please reach out to jasshank@u.nus.edu!</p>
+<h1 id="recommended-reading-guide"><a class="header" href="#recommended-reading-guide">Recommended reading guide</a></h1>
+<pre class="mermaid">graph TD;
+
+Multimeter --&gt; id0[Activity I]
+id1[Power supply] --&gt; id0[Acitivity I]
+id0[Activity I] --&gt; Oscilloscope 
+Oscilloscope --&gt; id3[Acitivity II]
+Oscilloscope --&gt; id2[Logic analyser]
+</pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-it"><a class="header" href="#what-is-it">What is it?</a></h1>
 <p>A multimeter is a combination of multiple electronic meters (as the name suggests). A typical multimeter includes the following features: </p>
 <ul>
@@ -173,12 +182,12 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-it-1"><a class="header" href="#what-is-it-1">What is it?</a></h1>
 <p>A controllable DC power source, especially useful when testing circuits. A key features of DC power supplies is the ability to set voltage and current limits, allowing you to test your circuit safely. </p>
 <h1 id="setting-voltage-and-current"><a class="header" href="#setting-voltage-and-current">Setting voltage and current</a></h1>
-<p>The method to set voltage and current limits depends on your specific power supply, and you are <strong>highly encouraged</strong> to read the manual which is provided with yours. </p>
+<p>In general, you click the voltage/current button, select the decimal place you want to change, then turn the knob to the value you desire. However, the method to set voltage and current limits can vary, so you are <strong>highly encouraged</strong> to read the manual which is provided with yours. </p>
 <p><img src="./img/picture.png" alt="dc_power_supply_image" /></p>
-<h2 id="common-terminology"><a class="header" href="#common-terminology">Common terminology</a></h2>
+<h1 id="common-terminology"><a class="header" href="#common-terminology">Common terminology</a></h1>
 <ul>
 <li>Device Under Test (DUT) - This refers to whatever device or circuit is currently being connected to the power supply and is commonly used in various fields related to electronics. </li>
-<li>Constant Voltage (CV) - This is the default mode of a power supply; the voltage will remain stable at the value configured by the user.</li>
+<li>Constant Voltage (CV) - This is the default mode of a power supply; the voltage will remain stable at the value configured by the user. </li>
 <li>Constant Current (CC) - When the DUT draws more current than the power supply can output the power supply will enter CC mode, dropping the voltage while maintaining current draw. This can occur because the physical limits of the power supply have been reached, or the current draw exceeded the value set by the user. </li>
 </ul>
 <h1 id="limitations"><a class="header" href="#limitations">Limitations</a></h1>
@@ -216,7 +225,9 @@
 <p>Different scopes offer different types of trigger modes, but common ones are triggering during a low to high transition or when a certain gradient is observed in the signal. As usual, your scopes manual will detail all the trigger modes available to you. This is the <a href="https://www.manualslib.com/manual/2678098/Siglent-Sds1022dl.html?page=49#manual">manual</a> for the scope found in the NUS E2A Electronic Lab, on the section 'Trigger Types'.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-it-3"><a class="header" href="#what-is-it-3">What is it?</a></h1>
 <p>A measurement device which is very similar to an oscilloscope, but it designed to only measure <strong>digital</strong> signals. These devices are usually much more accessible than an oscilloscopes due to its significantly lower price (~10 SGD), and are invaluable for investigating communication protocols such as UART, I2C and SPI. </p>
+<p><img src="./img/picture.png" alt="logic_analyser_image" /></p>
 <p>The majority of logic analyser do not come with a display built in, and instead need to be connected to a computer to view the results. The <a href="https://sigrok.org/wiki/Main_Page">sigrok</a> project is an open-source project designed to interface with different measurement devices, including logic analysers. This would allow you to interface your 10 SGD analyser with a robust front-end, which would usually be locked behind a paywall in the hundreds of dollars range. </p>
+<p><img src="./img/picture.png" alt="sigrock_image" /></p>
 <div style="break-before: page; page-break-before: always;"></div><p>The activities in this section are designed to familiarise yourself with the basics of these tools. It is recommended to answer/ponder on the questions asked in each activity, and if you have the time, to also test out your ideas from these questions using the equipment. </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="goal"><a class="header" href="#goal">Goal</a></h1>
 <p>Find the voltage across the resistors, individually and together. </p>

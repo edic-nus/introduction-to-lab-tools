@@ -6,3 +6,13 @@ Although this course material can be consumed without having the above equipment
 
 If you have any feedback on the content presented here or find any mistakes, please reach out to jasshank@u.nus.edu!
 
+# Recommended reading guide
+```mermaid
+graph TD;
+
+Multimeter --> id0[Activity I]
+id1[Power supply] --> id0[Acitivity I]
+id0[Activity I] --> Oscilloscope 
+Oscilloscope --> id3[Acitivity II]
+Oscilloscope --> id2[Logic analyser]
+```
