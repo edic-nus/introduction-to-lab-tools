@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="sidebar-visible no-js ayu">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -36,7 +36,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -62,7 +62,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('ayu')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -152,16 +152,17 @@
 <li>Resistance measurement </li>
 <li>Continuity testing</li>
 </ul>
-<p>Some also include the ability to measure AC sources and test the functionality of diodes. Be sure to have a look through the manual provided with the multimeter you own to explore its full capabilities. </p>
+<p>Some also include the ability to measure AC sources and test the functionality of diodes. Be sure to have a look through the manual provided with the multimeter you own to explore its full capabilities.</p>
 <h1 id="ports"><a class="header" href="#ports">Ports</a></h1>
 <p>Before using a multimeter, you should take note of the ports being used on it (the red and black holes at the bottom of the device). The <strong>COM port</strong> stands for common, and is connected to ground. This is where your black probe goes. The other ports will be for the red probe, indicated by a current rating (such as <strong>10 A</strong>) or various symbols found on the device. Ports labelled with a current rating are meant to measure large currents, while the other port is meant for low current applications (check your multimeters manual for exact specifications).</p>
-<p><img src="./img/picture.png" alt="multimeter_ports_image" /></p>
+<p><img src="./img/fluke_ports.jpg" alt="multimeter_ports_image" /></p>
 <h1 id="voltage-and-current"><a class="header" href="#voltage-and-current">Voltage and current</a></h1>
 <p>The V symbol on your multimeter indicates the voltmeter setting, while the A symbol indicates the ammeter setting. </p>
 <p>These symbol will be appended with various other symbols, such as ~, = or m. These symbols (usually) indicate AC measurement, DC measurement and voltage measurement in the millivolt range. </p>
+<p><img src="./img/fluke_dial.jpg" alt="multimeter_mv_dial_image" /></p>
 <p>Instead of m, some multimeters will include the number 2 in different magnitudes, such as: 2, 20, 200, 2000. <a href="https://electronics.stackexchange.com/questions/74864/why-does-my-multimeter-use-increments-of-2">Fun fact</a> on why the number 2 is used (hint: it's related to 7-segment displays).</p>
+<p><img src="./img/uni-t_dial.jpg" alt="multimeter_2_scale_dial_image" /></p>
 <p>The unit measured is voltage and amps respectively, with the scaling dependent on the range being measured. Alternating the orientation of the test probes would result in flipped readings, so its up to the user to be aware of the flow of current in the circuit. </p>
-<p><img src="./img/picture.png" alt="multimeter_dial_image" /></p>
 <h1 id="resistance"><a class="header" href="#resistance">Resistance</a></h1>
 <p>The &quot;Ohm&quot; symbol indicates resistance measurement and its unit of measurement is also in ohms. The orientation of the positive and negative probes of the multimeter do not affect the measured resistance.</p>
 <h1 id="continuity"><a class="header" href="#continuity">Continuity</a></h1>
