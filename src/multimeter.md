@@ -15,7 +15,10 @@ Before using a multimeter, you should take note of the ports being used on it (t
 # Voltage and current
 The V symbol on your multimeter indicates the voltmeter setting, while the A symbol indicates the ammeter setting. 
 
-These symbol will be appended with various other symbols, such as ~, = or m. These symbols (usually) indicate AC measurement, DC measurement and voltage measurement in the millivolt range. 
+![continuity_symbol](https://dam-assets.fluke.com/s3fs-public/flk-webcard-dmm-dial-1500x1000.jpg)
+[Source](https://www.fluke.com/en-us/learn/blog/digital-multimeters/multimeter-dial-button-jacks-display)
+
+These symbol will be appended with various other symbols, such as ~, = or m (symbols 6-8). These symbols (usually) indicate AC measurement, DC measurement and voltage measurement in the millivolt range. 
 
 ![multimeter_mv_dial_image](./img/fluke_dial.jpg)
 
@@ -27,9 +30,9 @@ The unit measured is voltage and amps respectively, with the scaling dependent o
 
 
 # Resistance 
-The "Ohm" symbol indicates resistance measurement and its unit of measurement is also in ohms. The orientation of the positive and negative probes of the multimeter do not affect the measured resistance.
+The "Ohm" symbol (symbol 12) resistance measurement and its unit of measurement is also in ohms. The orientation of the positive and negative probes of the multimeter do not affect the measured resistance.
 
 # Continuity  
-Continuity testing is used to check if current can flow along the tested circuit or material. A successful continuity check will result in a "beep" noise. 
+Continuity testing is used to check if current can flow along the tested circuit or material. A successful continuity check will result in a "beep" noise. The continuity symbol (symbol 11) looks like a 90 degree right rotated WiFi icon. 
 
 It is good practice to test the probes of the multimeter against itself to ensure that you are a) in continuity mode and b) continuity mode is functioning as intended. You should hear a beep when the probes touch each other. 

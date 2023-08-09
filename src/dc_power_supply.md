@@ -13,3 +13,5 @@ In general, you click the voltage/current button, select the decimal place you w
 
 # Limitations 
 Every power supply will have its own maximum ratings, such as 30  V @ 150 W with a maximum current of 5 A. This could result in 'beefy' motors not functioning as intended when used with a power supply. Instead, a battery with much higher current ratings should be used, albeit cautiously. 
+
+To combat this, multiple power supplies can be chained together in series or parallel in order to increase the total current or voltage output respectively. 

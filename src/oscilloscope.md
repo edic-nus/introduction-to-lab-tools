@@ -26,7 +26,7 @@ When taking measurements across very metal contacts, the hook attachment can be 
 
 Below is an image of a probe which has had the hook removed and the fixed ground tip attached. 
 ![fine_tip_probe](./img/fine_tip_probe.png)
-[Image credit](https://electronics.stackexchange.com/questions/411399/how-the-low-inductance-of-short-ground-clip-probes-prevents-interference)
+[Source](https://electronics.stackexchange.com/questions/411399/how-the-low-inductance-of-short-ground-clip-probes-prevents-interference)
 
 Finally, some probes come included with a slider marked with 1x and 10x on either end. 1x and 10x refers to the input impedance (resistance) of the scope, with the 10x mode increasing the input impedance of the probe by 10 times. This will result in a cleaner measurement, but with the downside that the measured voltage will be 10 times smaller than what it actually is. Because of this, small signals might become too small to be measured by the scope.  The choice of mode should be dependent on the DUT and is up to the user. 
 

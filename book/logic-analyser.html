@@ -149,6 +149,13 @@
 <p><img src="./img/logic_analyser.jpg" alt="logic_analyser_image" /></p>
 <p>The majority of logic analyser do not come with a display built in, and instead need to be connected to a computer to view the results. The <a href="https://sigrok.org/wiki/Main_Page">sigrok</a> project is an open-source project designed to interface with different measurement devices, including logic analysers. This would allow you to interface your 10 SGD analyser with a robust front-end, which would usually be locked behind a paywall to the tune of a few hundred dollars. </p>
 <p><img src="./img/sigrok_home.png" alt="sigrock_image" /></p>
+<p>In general, you will need to install 3 things to get sigrok working on your system: </p>
+<ol>
+<li>sigrok-cli, the actual application </li>
+<li>pulseview, the GUI for sigrok-cli </li>
+<li>fx2lafw, the generic open-source driver used in these cheaper logic analysers </li>
+</ol>
+<p>If you're on Windows, SparkFun has a great <a href="https://learn.sparkfun.com/tutorials/using-the-usb-logic-analyzer-with-sigrok-pulseview/all">write-up</a> on setting up sigrok on it. For Linux and MacOS users, you can refer to the official sigrok documentation or checkout YouTube for videos on the topic. </p>
 
                     </main>
 
