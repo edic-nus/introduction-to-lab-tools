@@ -191,7 +191,7 @@ Oscilloscope --&gt; id2[Logic analyser]
 <p>A controllable DC power source, especially useful when testing circuits. A key features of DC power supplies is the ability to set voltage and current limits, allowing you to test your circuit safely. </p>
 <h1 id="setting-voltage-and-current"><a class="header" href="#setting-voltage-and-current">Setting voltage and current</a></h1>
 <p>In general, you click the voltage/current button, select the decimal place you want to change, then turn the knob to the value you desire. However, the method to set voltage and current limits can vary, so you are <strong>highly encouraged</strong> to read the manual which is provided with yours. </p>
-<p><img src="./img/picture.png" alt="dc_power_supply_image" /></p>
+<p><img src="./img/power_supply.jpg" alt="dc_power_supply_image" /></p>
 <h1 id="common-terminology"><a class="header" href="#common-terminology">Common terminology</a></h1>
 <ul>
 <li>Device Under Test (DUT) - This refers to whatever device or circuit is currently being connected to the power supply and is commonly used in various fields related to electronics. </li>
@@ -202,36 +202,41 @@ Oscilloscope --&gt; id2[Logic analyser]
 <p>Every power supply will have its own maximum ratings, such as 30  V @ 150 W with a maximum current of 5 A. This could result in 'beefy' motors not functioning as intended when used with a power supply. Instead, a battery with much higher current ratings should be used, albeit cautiously. </p>
 <p>To combat this, multiple power supplies can be chained together in series or parallel in order to increase the total current or voltage output respectively. </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-it-2"><a class="header" href="#what-is-it-2">What is it?</a></h1>
-<p>It is a measurement device which is measures the voltage across two points. Although this may seem similar to a voltmeter, an oscilloscope does this <strong>extremely</strong> quickly, allowing it to plot voltage graphs against time with small time steps. </p>
+<p>It is a measurement device which is measures the voltage across two points. Although this may seem similar to a voltmeter, an oscilloscope does this <strong>extremely</strong> quickly, allowing it to plot voltage graphs against time with small time steps.</p>
+<p><img src="./img/oscilloscope.JPG" alt="scope_image" /></p>
 <p>This makes scopes brilliant for observing fast moving digital and analog signals, commonly found in communication lines or in fast switching circuits. </p>
 <p>The resolution (the size of the time step) of an oscilloscope varies and is dependent on the scope being used. Always refer to the manual and specification sheet of your scope to learn its limitations. </p>
 <h1 id="display"><a class="header" href="#display">Display</a></h1>
 <p>The oscilloscopes display has voltage on the vertical axis and time on the horizontal axis. </p>
 <p>The display itself is broken up into a grid. Each square on the grid has two divisions, the vertical and horizontal division. The vertical and horizontal divisions are sometimes referred to as voltage and time divisions respectively, due to the axis positions. The exact units of these divisions are generally displayed at the top or bottom of the scopes display. (hint: when first using your scope, turn the knobs to see what changes!)</p>
-<p><img src="./img/picture.png" alt="scope_display_image" /></p>
+<p><img src="./img/scope_display.JPG" alt="scope_display_image" /></p>
 <h1 id="channels"><a class="header" href="#channels">Channels</a></h1>
 <p>Oscilloscopes can have multiple channels for taking measurements. A 3 channel scope will be able to measure 3 different signals at same time, overlaying them on top of each other on the display. </p>
 <p>Individual channels can be toggled on and off, depending on what the user is observe from the DUT. Care should be taken to make sure the channel being display corresponds to the channel being used for measurement. </p>
-<p><img src="./img/picture.png" alt="scope_channel_image" /></p>
+<p><img src="./img/scope_channels.JPG" alt="scope_channel_image" /></p>
 <h1 id="probes"><a class="header" href="#probes">Probes</a></h1>
-<p>Probes are connected to the channel ports of an oscilloscope. Each probe has a ground clip as well a hook for taking measurements. </p>
+<p>Probes are connected to the channel ports of an oscilloscope. Each probe has a ground clip as well a hook for taking measurements.</p>
+<p><img src="./img/scope_probe.JPG" alt="scope_probes_image" /></p>
 <p>When taking measurements across very metal contacts, the hook attachment can be removed, revealing a fine metal tip for taking measurements on small traces! Additionally, the ground clip can be switch out for a fix distance tip too.</p>
 <p>Below is an image of a probe which has had the hook removed and the fixed ground tip attached. 
 <img src="./img/fine_tip_probe.png" alt="fine_tip_probe" />
 <a href="https://electronics.stackexchange.com/questions/411399/how-the-low-inductance-of-short-ground-clip-probes-prevents-interference">Source</a></p>
 <p>Finally, some probes come included with a slider marked with 1x and 10x on either end. 1x and 10x refers to the input impedance (resistance) of the scope, with the 10x mode increasing the input impedance of the probe by 10 times. This will result in a cleaner measurement, but with the downside that the measured voltage will be 10 times smaller than what it actually is. Because of this, small signals might become too small to be measured by the scope.  The choice of mode should be dependent on the DUT and is up to the user. </p>
 <h1 id="all-the-buttons"><a class="header" href="#all-the-buttons">All the buttons</a></h1>
-<p>Scopes have...a lot of buttons. The two basic knobs are the horizontal and vertical positioning knobs. These knobs allow you to move your measured signal left, right, up and down. </p>
+<p>Scopes have...a lot of buttons. </p>
+<p><img src="./img/scope_buttons.JPG" alt="scope_buttons_image" /></p>
+<p>The two basic knobs are the horizontal and vertical positioning knobs. These knobs allow you to move your measured signal left, right, up and down. </p>
 <p>The trigger (sometimes called auto-scale or just auto) button is to automatically sync up your scope with the incoming signal, 'calibrating' it. Either than auto-triggering, you can configure your scope to trigger at specific types of signals. Find out more <a href="./scope_triggering.html">here</a>. </p>
 <p>The rest of the buttons on the scope are dependent on the specific model, but they allow you to interface with the different measurement modes of the scope, such as frequency, pulse width modulation, peak-to-peak, maximum, minimum, mean and so on. Nearly every scope comes with a 'manual measurement' mode, in the form of cursors. Cursors are lines which you can move across your scopes display to help you calculate changes between two points, either in the voltage or time scale. </p>
 <p>The best way to figure out what the buttons on your scope is to click them and see what happens, so don't be afraid to do so. (reading the manual for your scope also helps)</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-triggering"><a class="header" href="#what-is-triggering">What is triggering?</a></h1>
 <p>Triggering helps to synchronise the incoming signal with the display of the scope. When the scope is not triggered (synchronised). </p>
-<p>A good way to see for your self what an unsynchronised scope looks like is to attach your probe to the square wave signal generator of your scope (usually at the bottom right hand corner), and rotate the trigger knob so its completely above or below the signal. You will immediately notice that the waveform displayed is no longer a smooth square wave as it starts jumping across your screen. If you don't have a scope on hand, this <a href="https://www.youtube.com/watch?v=j2vch6wAddc">video</a> by Keysight provides a great visualisation of it.</p>
-<p><img src="./img/picture.png" alt="scope_square_wave_gen_image" /></p>
+<p>A good way to see for your self what an unsynchronised scope looks like is to attach your probe to the square wave signal generator of your scope (usually at the bottom right hand corner), and rotate the trigger knob so its completely above or below the signal. You will immediately notice that the waveform displayed is no longer a smooth square wave as it starts to jitter across your screen. If you don't have a scope on hand, this <a href="https://www.youtube.com/watch?v=j2vch6wAddc">video</a> by Keysight provides a great visualisation of it.</p>
+<p><img src="./img/scope_square_wave.JPG" alt="scope_square_wave_image" /></p>
+<p><img src="./img/scope_wave_gen.JPG" alt="scope_wave_gen_image" /></p>
 <h1 id="trigger-modes"><a class="header" href="#trigger-modes">Trigger modes</a></h1>
 <p>By default, your oscilloscope will be on 'auto' trigger mode and will continuously show you whatever is being fed into it. However, there are situations were you want to capture a particular moment with your signal and not the entire thing, such a spike above a certain voltage or the transition from 0 V to 5 V. This is where trigger modes come in. </p>
-<p>Different scopes offer different types of trigger modes, but common ones are triggering during a low to high transition or when a certain gradient is observed in the signal. As usual, your scopes manual will detail all the trigger modes available to you. This is the <a href="https://www.manualslib.com/manual/2678098/Siglent-Sds1022dl.html?page=49#manual">manual</a> for the scope found in the NUS E2A Electronic Lab, on the section 'Trigger Types'.</p>
+<p>Different scopes offer different types of trigger modes, but common ones are triggering during a low to high transition or when a certain gradient is observed in the signal. As usual, your scopes manual will detail all the trigger modes available to you. This is the <a href="https://www.manualslib.com/manual/2678098/Siglent-Sds1022dl.html?page=49#manual">manual</a> for one of the scope found in the NUS E2A Electronic Lab, on the section 'Trigger Types'.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-it-3"><a class="header" href="#what-is-it-3">What is it?</a></h1>
 <p>A measurement device which is very similar to an oscilloscope, but it designed to only measure <strong>digital</strong> signals. These devices are usually much more accessible than an oscilloscopes due to its significantly lower price (~10 SGD), and are invaluable for investigating communication protocols such as UART, I2C and SPI. </p>
 <p><img src="./img/logic_analyser.jpg" alt="logic_analyser_image" /></p>

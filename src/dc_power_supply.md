@@ -4,7 +4,7 @@ A controllable DC power source, especially useful when testing circuits. A key f
 # Setting voltage and current 
 In general, you click the voltage/current button, select the decimal place you want to change, then turn the knob to the value you desire. However, the method to set voltage and current limits can vary, so you are **highly encouraged** to read the manual which is provided with yours. 
 
-![dc_power_supply_image](./img/picture.png)
+![dc_power_supply_image](./img/power_supply.jpg)
 
 # Common terminology
 - Device Under Test (DUT) - This refers to whatever device or circuit is currently being connected to the power supply and is commonly used in various fields related to electronics. 
